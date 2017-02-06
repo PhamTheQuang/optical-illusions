@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stereograms</title>
+  </head>
+  <body>
+    <script src="stereograms.js"></script>
+    <h1>Stereograms</h1>
+    <h2>Contour Map</h2>
+    <div>
+      <button id='clear-btn'>Clear</button>
+      <label>R</label>
+      <input type="number" name="" id='input-size' value="1" />
+      <label>L</label>
+      <input type="number" name="" id='input-level' value="1" />
+      <button id='set-btn'>Set</button>
+    </div>
+    <canvas style='border: solid black 1px;' width="200" height="200" id="contour-canvas"></canvas>
+    <br />
+    <h2>Stereogram</h2>
+    <div>
+      <button onClick="stereogram.reload()">Generate</button>
+      <button onClick="window.location.href = stereogram.getImageUrl()">Download</button>
+    </div>
+    <canvas style='border: solid black 1px;' width="400" height="200" id="stereogram-canvas"></canvas>
+  </body>
+</html>
